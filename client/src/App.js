@@ -82,7 +82,6 @@ export default function App() {
         type="submit"
         variant="outlined"
         color="primary"
-        href="#outlined-buttons"
         onClick={() => recognition.start()}>
         Voice Activate
       </Button>
