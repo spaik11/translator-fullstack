@@ -25,12 +25,7 @@ mongoose
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.use(
-  cors({
-    origin: ["http://localhost:3000"],
-    // credentials: true,
-  })
-);
+app.use(cors());
 
 app.use(compression());
 app.use(logger("dev"));
