@@ -36,7 +36,7 @@ export default function App() {
       language,
     };
     try {
-      let success = await Axios.post("/api/translate", data);
+      let success = await Axios.post("/translate", data);
 
       setTranslatedTranscript(success.data);
       readOutLoud(success.data, language);
