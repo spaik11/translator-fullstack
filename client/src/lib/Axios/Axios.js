@@ -3,8 +3,8 @@ import axios from "axios";
 const Axios = axios.create({
   baseURL:
     process.env.NODE_ENV === "development"
-      ? "/api"
-      : "http://localhost:3001/api",
+      ? process.env.REACT_APP_API_HOST_ADDRESS
+      : process.env.REACT_APP_API_HOST_ADDRESS,
   timeout: 50000,
   headers: {
     Accept: "application/json",
